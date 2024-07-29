@@ -1,10 +1,11 @@
 package main
 
 import (
-    "github.com/joho/godotenv"
-	"go.uber.org/fx"
-	"apps/gin-app/utils"
 	"apps/gin-app/bootstrap"
+	"apps/gin-app/utils"
+
+	"github.com/joho/godotenv"
+	"go.uber.org/fx"
 )
 
 func main() {

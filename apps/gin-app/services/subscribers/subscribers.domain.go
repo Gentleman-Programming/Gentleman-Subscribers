@@ -1,7 +1,10 @@
 package services
 
 import (
-	"apps/gin-app/services/subscribers/models"
+	"apps/gin-app/models"
+	repositoryDomain "apps/gin-app/services/repository"
+	subscriberModel "apps/gin-app/services/subscribers/models"
+	"apps/gin-app/utils"
 
 	"go.uber.org/fx"
 )
@@ -12,13 +15,24 @@ func NewSubscribersService() SubscriberService {
 	return SubscriberService{}
 }
 
-func (s *SubscriberService) GetAllSubscribers() ([]models.Subscriber, error) {
-	subscribers := []models.Subscriber{
-		{ID: 1, Name: "gentleman", Email: "gentlemanprogramming@gmail.com"},
-		{ID: 2, Name: "juan", Email: "juan@gmail.com"},
+func (s *SubscriberService) ReadAndSetSubscribers() (*[]subscriberModel.Subscriber, *models.AppError) {
+	subscribers, err := utils.CsvReader("files/subscribers.csv")
+	if err != nil {
+		return nil, err
+	}
+
+	err = repositoryDomain.SetSubscribers(subscribers)
+	if err != nil {
+		return nil, err
 	}
 
 	return subscribers, nil
+}
+
+func (s *SubscriberService) GetAllSubscribers() (*[]subscriberModel.Subscriber, *models.AppError) {
+	subscribers, err := repositoryDomain.GetAllSubscribers()
+
+	return subscribers, err
 }
 
 var Module = fx.Options(

@@ -16,10 +16,18 @@ func NewSubscriberController(service services.SubscriberService) SubscriberContr
 	return SubscriberController{service: service}
 }
 
+func (ctrl *SubscriberController) ReadAndSetSubscribers(c *gin.Context) {
+	subscribers, err := ctrl.service.ReadAndSetSubscribers()
+	if err != nil {
+		c.JSON(err.Code, utils.ResponseError{Message: err.Message})
+	}
+	c.JSON(http.StatusOK, subscribers)
+}
+
 func (ctrl *SubscriberController) GetSubscribrers(c *gin.Context) {
 	subscribers, err := ctrl.service.GetAllSubscribers()
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, utils.ResponseError{Message: "Error getting all Subscribers"})
+		c.JSON(err.Code, utils.ResponseError{Message: err.Message})
 	}
 
 	c.JSON(http.StatusOK, subscribers)
