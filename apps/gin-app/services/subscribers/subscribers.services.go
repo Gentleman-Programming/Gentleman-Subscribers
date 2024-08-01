@@ -2,17 +2,21 @@ package services
 
 import (
 	"apps/gin-app/models"
-	repositoryDomain "apps/gin-app/services/repository"
+	repositoryService "apps/gin-app/services/repository"
 	subscriberModel "apps/gin-app/services/subscribers/models"
 	"apps/gin-app/utils"
 
 	"go.uber.org/fx"
 )
 
-type SubscriberService struct{}
+type SubscriberService struct {
+	rs *repositoryService.RepositoryService
+}
 
-func NewSubscribersService() SubscriberService {
-	return SubscriberService{}
+func NewSubscribersService(repositoryService *repositoryService.RepositoryService) SubscriberService {
+	return SubscriberService{
+		rs: repositoryService,
+	}
 }
 
 func (s *SubscriberService) ReadAndSetSubscribers() (*[]subscriberModel.Subscriber, *models.AppError) {
@@ -21,7 +25,7 @@ func (s *SubscriberService) ReadAndSetSubscribers() (*[]subscriberModel.Subscrib
 		return nil, err
 	}
 
-	err = repositoryDomain.SetSubscribers(subscribers)
+	err = s.rs.SetSubscribers(subscribers)
 	if err != nil {
 		return nil, err
 	}
@@ -30,7 +34,7 @@ func (s *SubscriberService) ReadAndSetSubscribers() (*[]subscriberModel.Subscrib
 }
 
 func (s *SubscriberService) GetAllSubscribers() (*[]subscriberModel.Subscriber, *models.AppError) {
-	subscribers, err := repositoryDomain.GetAllSubscribers()
+	subscribers, err := s.rs.GetAllSubscribers()
 
 	return subscribers, err
 }

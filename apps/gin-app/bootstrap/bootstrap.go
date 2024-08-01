@@ -8,7 +8,6 @@ import (
 	"context"
 
 	services "apps/gin-app/services"
-	repositoryService "apps/gin-app/services/repository"
 
 	"go.uber.org/fx"
 )
@@ -36,7 +35,6 @@ func bootstrap(
 			go func() {
 				middlewares.Setup()
 				routes.Setup()
-				repositoryService.InitializeDb()
 				host := "0.0.0.0"
 				if env.Environment == "development" {
 					host = "127.0.0.1"

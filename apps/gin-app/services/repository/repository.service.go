@@ -1,38 +1,41 @@
 package service
 
 import (
-	"apps/gin-app/models"
+	models "apps/gin-app/models"
 	db_config "apps/gin-app/services/repository/config"
 	subscriberModel "apps/gin-app/services/subscribers/models"
 	"context"
 	"log/slog"
 	"net/http"
-	"sync"
 
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo/options"
+	"go.uber.org/fx"
 )
 
-func InitializeDb() {
+func InitializeDb() error {
 	_, err := db_config.InitializeDb()
 	if err != nil {
 		slog.Error(err.Message)
 
-		panic(err.Err)
+		return err.Err
 	}
+
+	return nil
 }
 
-type SubscriberWithMutex struct {
-	subscriber subscriberModel.Subscriber
-	mu         sync.Mutex
+type RepositoryService struct{}
+
+func NewRepositoryService() (*RepositoryService, error) {
+	err := InitializeDb()
+	if err != nil {
+		return nil, err
+	}
+
+	return &RepositoryService{}, nil
 }
 
-func saveToDatabase(subscriber *SubscriberWithMutex, wg *sync.WaitGroup) *models.AppError {
-	defer wg.Done()
-	defer subscriber.mu.Unlock()
-
-	subscriber.mu.Lock()
-
+func (n *RepositoryService) saveToDatabase(subscriber subscriberModel.Subscriber) *models.AppError {
 	_, err := db_config.SubscriberCollection.InsertOne(context.TODO(), subscriber)
 	if err != nil {
 		return &models.AppError{
@@ -45,18 +48,12 @@ func saveToDatabase(subscriber *SubscriberWithMutex, wg *sync.WaitGroup) *models
 	return nil
 }
 
-func SetSubscribers(subscribers *[]subscriberModel.Subscriber) *models.AppError {
-	var wg sync.WaitGroup
-
+func (n *RepositoryService) SetSubscribers(subscribers *[]subscriberModel.Subscriber) *models.AppError {
 	newSubscribers := make([]interface{}, len(*subscribers))
 	for i, subscriber := range *subscribers {
-		wg.Add(1)
-		go saveToDatabase(&SubscriberWithMutex{
-			subscriber: subscriber,
-		}, &wg)
+		go n.saveToDatabase(subscriber)
 		newSubscribers[i] = subscriber
 	}
-	wg.Wait()
 
 	_, err := db_config.SubscriberCollection.InsertMany(context.TODO(), newSubscribers)
 	if err != nil {
@@ -70,7 +67,7 @@ func SetSubscribers(subscribers *[]subscriberModel.Subscriber) *models.AppError 
 	return nil
 }
 
-func GetAllSubscribers() (*[]subscriberModel.Subscriber, *models.AppError) {
+func (n *RepositoryService) GetAllSubscribers() (*[]subscriberModel.Subscriber, *models.AppError) {
 	var result []subscriberModel.Subscriber
 
 	cursor, err := db_config.SubscriberCollection.Find(context.TODO(), bson.D{}, options.Find())
@@ -112,3 +109,7 @@ func GetAllSubscribers() (*[]subscriberModel.Subscriber, *models.AppError) {
 	}
 	return &result, nil
 }
+
+var Module = fx.Options(
+	fx.Provide(NewRepositoryService),
+)
