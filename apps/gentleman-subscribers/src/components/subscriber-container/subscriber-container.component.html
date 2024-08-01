@@ -1,0 +1,21 @@
+@let subscribers = subscribers$ | async;
+
+<div>
+    @for (subscriber of subscribers; track subscriber.id; let last = $last) {
+      @defer (on viewport) {
+        <span>{{ subscriber.name }}</span>
+        @if (!last) {
+          <span> ,</span>
+        }
+      } @placeholder {
+        <div>Cargando</div>
+      }
+  } @empty {
+    <div>No Data</div>
+  } 
+  <div>
+    <button (click)="getWinner()">Get Winner</button>
+  </div>
+  <h2>Winner:</h2>
+  <p>{{winner | json}}</p>
+</div>

@@ -58,160 +58,160 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "test/Gentleman-Subscribers/.git/hooks/post-update.sample",
-        "hash": "16498975149454253769"
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/@angular_platform-server.js",
+        "hash": "16497498835424811672"
       },
       {
-        "file": ".nx/cache/cloud/2407.22.14.hotfix6/lib/heartbeat/heartbeat-process.js",
-        "hash": "17038437160217847585"
+        "file": ".git/FETCH_HEAD",
+        "hash": "3244421341483603138"
       },
       {
-        "file": ".nx/cache/cloud/2407.22.14.hotfix6/static/login-start.html",
-        "hash": "1953965807454864609"
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/@angular_platform-browser.js.map",
+        "hash": "9947606979680686569"
       },
       {
-        "file": "test/Gentleman-Subscribers/.git/hooks/pre-commit.sample",
-        "hash": "10258126878297473471"
-      },
-      {
-        "file": "bun.lockb",
-        "hash": "3778176343848922309"
-      },
-      {
-        "file": "test/Gentleman-Subscribers/.git/hooks/pre-applypatch.sample",
-        "hash": "1595391782482835178"
-      },
-      {
-        "file": ".nx/cache/cloud/2407.22.14.hotfix6/package.json",
-        "hash": "6698871274132274846"
-      },
-      {
-        "file": "test/Gentleman-Subscribers/.git/description",
-        "hash": "6589616779641096119"
-      },
-      {
-        "file": "test/Gentleman-Subscribers/.git/objects/pack/tmp_pack_VBoekU",
-        "hash": "3978146762269553492"
-      },
-      {
-        "file": "README.md",
-        "hash": "16328734023533175866"
-      },
-      {
-        "file": ".nx/cache/cloud/2407.22.14.hotfix6/index.js",
-        "hash": "18336112448943058993"
-      },
-      {
-        "file": "test/Gentleman-Subscribers/.git/hooks/pre-merge-commit.sample",
-        "hash": "5691533144974613569"
-      },
-      {
-        "file": ".nx/cache/cloud/2407.22.14.hotfix6/lib/daemon/process-run-end.js",
-        "hash": "15545929090326221201"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "3494843969422251966"
-      },
-      {
-        "file": "nx.json",
-        "hash": "5516740188877709618"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
-      },
-      {
-        "file": "test/Gentleman-Subscribers/.git/hooks/applypatch-msg.sample",
-        "hash": "3740124940738663445"
-      },
-      {
-        "file": "go.work.sum",
-        "hash": "5538573750550170390"
-      },
-      {
-        "file": "test/Gentleman-Subscribers/.git/hooks/fsmonitor-watchman.sample",
-        "hash": "5775573213843170127"
-      },
-      {
-        "file": "test/Gentleman-Subscribers/.git/hooks/commit-msg.sample",
-        "hash": "11930680668000581900"
-      },
-      {
-        "file": ".nx/workspace-data/parsed-lock-file.json",
-        "hash": "14789777370228875261"
-      },
-      {
-        "file": "test/Gentleman-Subscribers/.git/hooks/push-to-checkout.sample",
-        "hash": "5194610557431485830"
-      },
-      {
-        "file": "package.json",
-        "hash": "15528610718952491854"
-      },
-      {
-        "file": ".nx/cache/cloud/2407.22.14.hotfix6/static/login-end.html",
-        "hash": "38214237000542814"
-      },
-      {
-        "file": ".nx/workspace-data/file-map.json",
-        "hash": "10114067073013514881"
-      },
-      {
-        "file": "test/Gentleman-Subscribers/.git/config",
-        "hash": "3315824357190007740"
-      },
-      {
-        "file": ".nx/workspace-data/project-graph.json",
-        "hash": "17681699363570235278"
-      },
-      {
-        "file": ".nx/workspace-data/d/daemon.log",
-        "hash": "5439157202292607647"
-      },
-      {
-        "file": ".nx/workspace-data/lockfile.hash",
-        "hash": "18011430679322183768"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "16936441711144470533"
-      },
-      {
-        "file": "test/Gentleman-Subscribers/.git/hooks/update.sample",
-        "hash": "14696759095365231402"
-      },
-      {
-        "file": "test/Gentleman-Subscribers/.git/info/exclude",
-        "hash": "2084763735014985388"
-      },
-      {
-        "file": "test/Gentleman-Subscribers/.git/hooks/prepare-commit-msg.sample",
-        "hash": "4009645067798984574"
-      },
-      {
-        "file": "test/Gentleman-Subscribers/.git/hooks/pre-receive.sample",
-        "hash": "8999430056057037490"
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/package.json",
+        "hash": "8630294688235076505"
       },
       {
         "file": "go.work",
         "hash": "10354122187924325164"
       },
       {
-        "file": "test/Gentleman-Subscribers/.git/hooks/pre-rebase.sample",
-        "hash": "15784748353859782246"
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/chunk-BGTZDKPF.js.map",
+        "hash": "18167830160077164485"
       },
       {
-        "file": ".nx/cache/cloud/verify.lock",
-        "hash": "13743867394659687262"
+        "file": "README.md",
+        "hash": "16328734023533175866"
       },
       {
-        "file": "test/Gentleman-Subscribers/.git/HEAD",
-        "hash": "11710400652189793685"
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/chunk-YV77NMCH.js.map",
+        "hash": "14734432064591057592"
       },
       {
-        "file": "test/Gentleman-Subscribers/.git/hooks/pre-push.sample",
-        "hash": "3666369642558647280"
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/@angular_platform-server.js.map",
+        "hash": "1562026943307360469"
+      },
+      {
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/chunk-NQ4HTGF6.js.map",
+        "hash": "9947606979680686569"
+      },
+      {
+        "file": "go.work.sum",
+        "hash": "5538573750550170390"
+      },
+      {
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/xhr2-V2GDQ3PS.js.map",
+        "hash": "1916054070370237680"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json",
+        "hash": "17681699363570235278"
+      },
+      {
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/@angular_platform-browser.js",
+        "hash": "4780020561143150330"
+      },
+      {
+        "file": ".nx/cache/cloud/2407.29.8.hotfix5/index.js",
+        "hash": "15965615586968163078"
+      },
+      {
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/@angular_router.js",
+        "hash": "19330702081220875"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
+      },
+      {
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/chunk-YV77NMCH.js",
+        "hash": "2827657629011858283"
+      },
+      {
+        "file": ".angular/cache/18.1.1/gentleman-subscribers/.tsbuildinfo",
+        "hash": "4620028000731277730"
+      },
+      {
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/@angular_core.js.map",
+        "hash": "9947606979680686569"
+      },
+      {
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/@angular_common.js",
+        "hash": "15193195595925264497"
+      },
+      {
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/@angular_core.js",
+        "hash": "14387155956766972567"
+      },
+      {
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/@angular_router.js.map",
+        "hash": "13899559629894029930"
+      },
+      {
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/xhr2-V2GDQ3PS.js",
+        "hash": "13174842658084628456"
+      },
+      {
+        "file": "package.json",
+        "hash": "15528610718952491854"
+      },
+      {
+        "file": ".nx/workspace-data/d/daemon.log",
+        "hash": "5330857571905587605"
+      },
+      {
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/chunk-WP7QQGS5.js.map",
+        "hash": "11170373204802861810"
+      },
+      {
+        "file": ".nx/cache/cloud/2407.29.8.hotfix5/package.json",
+        "hash": "6698871274132274846"
+      },
+      {
+        "file": "nx.json",
+        "hash": "4166816058901468201"
+      },
+      {
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/chunk-WP7QQGS5.js",
+        "hash": "3680209750960790995"
+      },
+      {
+        "file": ".angular/cache/18.1.1/vite/deps_temp_45bc0d52/package.json",
+        "hash": "8630294688235076505"
+      },
+      {
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/_metadata.json",
+        "hash": "10742952526920305540"
+      },
+      {
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/chunk-NQ4HTGF6.js",
+        "hash": "586663337903654111"
+      },
+      {
+        "file": "bun.lockb",
+        "hash": "3778176343848922309"
+      },
+      {
+        "file": ".angular/cache/18.1.1/vite/deps_ssr/chunk-BGTZDKPF.js",
+        "hash": "17660947903638078340"
+      },
+      {
+        "file": ".angular/cache/18.1.1/vite/deps_temp_df390920/package.json",
+        "hash": "8630294688235076505"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json",
+        "hash": "11285248094586215376"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "16936441711144470533"
       }
     ],
     "projectFileMap": {
@@ -230,7 +230,7 @@
         },
         {
           "file": "apps/gin-app/bootstrap/bootstrap.go",
-          "hash": "2655417402989004705"
+          "hash": "8246573717622990909"
         },
         {
           "file": "apps/gin-app/controllers/controllers.go",
@@ -297,20 +297,20 @@
           "hash": "13601608186576751927"
         },
         {
-          "file": "apps/gin-app/services/repository/repository.domain.go",
-          "hash": "6050903157891882757"
+          "file": "apps/gin-app/services/repository/repository.service.go",
+          "hash": "2586918388136941546"
         },
         {
           "file": "apps/gin-app/services/services.go",
-          "hash": "10366645171033217754"
+          "hash": "6924316195859912922"
         },
         {
           "file": "apps/gin-app/services/subscribers/models/subscribers.model.go",
           "hash": "16092346921996377922"
         },
         {
-          "file": "apps/gin-app/services/subscribers/subscribers.domain.go",
-          "hash": "5676590127240117464"
+          "file": "apps/gin-app/services/subscribers/subscribers.services.go",
+          "hash": "20425607240174838"
         },
         {
           "file": "apps/gin-app/utils/csv_reader.go",
@@ -361,7 +361,7 @@
         },
         {
           "file": "apps/gentleman-subscribers/src/app/app.component.html",
-          "hash": "5654460193981998828"
+          "hash": "6498550714727981762"
         },
         {
           "file": "apps/gentleman-subscribers/src/app/app.component.scss",
@@ -377,7 +377,7 @@
         },
         {
           "file": "apps/gentleman-subscribers/src/app/app.component.ts",
-          "hash": "6969796342253051465",
+          "hash": "3813794937432612558",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router"
@@ -389,15 +389,6 @@
           "deps": [
             "npm:@angular/core",
             "npm:@angular/platform-server"
-          ]
-        },
-        {
-          "file": "apps/gentleman-subscribers/src/app/app.config.ts",
-          "hash": "2958330198811694491",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "npm:@angular/platform-browser"
           ]
         },
         {
@@ -414,6 +405,14 @@
             "npm:@angular/core",
             "npm:@angular/common"
           ]
+        },
+        {
+          "file": "apps/gentleman-subscribers/src/components/index.ts",
+          "hash": "6122765647339455776"
+        },
+        {
+          "file": "apps/gentleman-subscribers/src/components/subscriber-container/subscriber-container.component.css",
+          "hash": "3244421341483603138"
         },
         {
           "file": "apps/gentleman-subscribers/src/index.html",
@@ -434,8 +433,16 @@
           ]
         },
         {
+          "file": "apps/gentleman-subscribers/src/models/index.ts",
+          "hash": "10836904176803228664"
+        },
+        {
+          "file": "apps/gentleman-subscribers/src/services/index.ts",
+          "hash": "13131495975903709357"
+        },
+        {
           "file": "apps/gentleman-subscribers/src/styles.scss",
-          "hash": "5195668842064076916"
+          "hash": "8970560354144180038"
         },
         {
           "file": "apps/gentleman-subscribers/src/test-setup.ts",
